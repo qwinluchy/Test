@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(44, 10, 11);
+height: auto;
+font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+h1{
+  width: 50px;
+  height: 150px;
+  margin-bottom: 200px;
+  color: red;
+  font-size:large;
+  font-weight:600;
+}
+
+.first{
+  color: white;
+margin-top: 100px;
+  font-size:xx-large;
+  font-weight: 600;
+  text-align: center;
+}
+
+.middle{
+ display: flex;
+ flex-direction: row;
+ justify-content:center;
+}
+
+.profile{
+  color: white;
+  text-align: center;
+}
+
+
+.second{
+  margin-right: 30px;
+}
+.third{
+  margin-right: 30px;
+}
+.fourth{
+  margin-right: 30px;
+}
+.fifth{
+margin-right: 30px;
+}
+.sixth{
+  margin-right: 30px;
+}
+
+button{
+  color: white;
+  background-color: black;
+  text-align:center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.last{
+text-align: center;
+}
