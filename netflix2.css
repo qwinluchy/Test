@@ -1,64 +1,93 @@
-body {
+
+body{
   background-color: rgb(44, 10, 11);
-height: auto;
-font-family: "Titillium Web", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: grid;
+  grid-template-rows: repeat(4);
+}
 
+.logo{
+  /* width: 100%; */
+  color: #e50914a1;
+  font-weight:bold;
+  text-align: center;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+.container {
+  text-align:center ;
+   margin-top: 400px;
 }
 
 h1{
-  width: 50px;
-  height: 150px;
-  margin-bottom: 200px;
-  color: red;
-  font-size:large;
-  font-weight:600;
-}
-
-.first{
   color: white;
-margin-top: 100px;
-  font-size:xx-large;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight:500;
+  font-family: sans-serif;
   text-align: center;
 }
 
-.middle{
+.profiles {
  display: flex;
  flex-direction: row;
- justify-content:center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap:wrap;
+  margin-bottom:40px;
 }
 
 .profile{
+  width: 100px;
+  text-align: center;
+}
+.profile img {
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile p{
   color: white;
+  text-align: center;
+  font-size:15px;
+  font-weight: 500;
+  font-family: sans-serif;
+  margin: 15px auto;
+  width: 100px;
+  cursor: pointer;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button {
+  color: white;
+  background-color: black;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+footer {
   text-align: center;
 }
 
-
-.second{
-  margin-right: 30px;
-}
-.third{
-  margin-right: 30px;
-}
-.fourth{
-  margin-right: 30px;
-}
-.fifth{
-margin-right: 30px;
-}
-.sixth{
-  margin-right: 30px;
-}
-
-button{
-  color: white;
-  background-color: black;
-  text-align:center;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-.last{
-text-align: center;
+@media (max-width:500px){
+  body{
+     min-height: 100%;
+  }
+  .container{
+margin-top: 200px;
+  }
+  .profile img{
+    width: 70px;
+  }
+  .profiles{
+    gap: 10px;
+   display: grid;
+  grid-template-columns: repeat(3,100px);
+  }
+  
 }
